@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32210.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoComplete", "src\AutoCompleteTask\AutoComplete\AutoComplete.csproj", "{51A1D026-D4CB-471D-B2B1-15E1F4B3AF6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AutoCompleteTask", "AutoCompleteTask", "{3591A864-5916-44FB-8FEE-23A0B6DBC67D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoComplete.Tests", "src\AutoCompleteTask\AutoComplete.Tests\AutoComplete.Tests.csproj", "{F9F46086-4F00-4FF2-959E-A38B071EEE7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MorphologyTask", "MorphologyTask", "{2524D32B-64FE-4E37-A8F1-A83D2F06383D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Morphology", "src\MorphologyTask\Morphology\Morphology.csproj", "{040C503C-D9A0-41E3-BCB0-3DE706A547C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Morphology.Tests", "src\MorphologyTask\Morphology.Tests\Morphology.Tests.csproj", "{FCF1DABE-D80B-4726-A86C-7D9B46F310F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MicroservicesTask", "MicroservicesTask", "{B502B6EC-9243-442C-8558-2746ECE8054F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices", "src\MicroservicesTask\Microservices\Microservices.csproj", "{49EC25EE-BF38-4F5A-8523-601208CC5B4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservices.Tests", "src\MicroservicesTask\Microservices.Tests\Microservices.Tests.csproj", "{017EE530-929F-46C3-A42A-227008381443}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51A1D026-D4CB-471D-B2B1-15E1F4B3AF6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A1D026-D4CB-471D-B2B1-15E1F4B3AF6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A1D026-D4CB-471D-B2B1-15E1F4B3AF6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A1D026-D4CB-471D-B2B1-15E1F4B3AF6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F46086-4F00-4FF2-959E-A38B071EEE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F46086-4F00-4FF2-959E-A38B071EEE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F46086-4F00-4FF2-959E-A38B071EEE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F46086-4F00-4FF2-959E-A38B071EEE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{040C503C-D9A0-41E3-BCB0-3DE706A547C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{040C503C-D9A0-41E3-BCB0-3DE706A547C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{040C503C-D9A0-41E3-BCB0-3DE706A547C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{040C503C-D9A0-41E3-BCB0-3DE706A547C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF1DABE-D80B-4726-A86C-7D9B46F310F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF1DABE-D80B-4726-A86C-7D9B46F310F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF1DABE-D80B-4726-A86C-7D9B46F310F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF1DABE-D80B-4726-A86C-7D9B46F310F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49EC25EE-BF38-4F5A-8523-601208CC5B4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49EC25EE-BF38-4F5A-8523-601208CC5B4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49EC25EE-BF38-4F5A-8523-601208CC5B4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49EC25EE-BF38-4F5A-8523-601208CC5B4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017EE530-929F-46C3-A42A-227008381443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017EE530-929F-46C3-A42A-227008381443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017EE530-929F-46C3-A42A-227008381443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017EE530-929F-46C3-A42A-227008381443}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51A1D026-D4CB-471D-B2B1-15E1F4B3AF6E} = {3591A864-5916-44FB-8FEE-23A0B6DBC67D}
+		{F9F46086-4F00-4FF2-959E-A38B071EEE7B} = {3591A864-5916-44FB-8FEE-23A0B6DBC67D}
+		{040C503C-D9A0-41E3-BCB0-3DE706A547C9} = {2524D32B-64FE-4E37-A8F1-A83D2F06383D}
+		{FCF1DABE-D80B-4726-A86C-7D9B46F310F4} = {2524D32B-64FE-4E37-A8F1-A83D2F06383D}
+		{49EC25EE-BF38-4F5A-8523-601208CC5B4B} = {B502B6EC-9243-442C-8558-2746ECE8054F}
+		{017EE530-929F-46C3-A42A-227008381443} = {B502B6EC-9243-442C-8558-2746ECE8054F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {704A3335-9677-4557-B6EE-D34533A949B2}
+	EndGlobalSection
+EndGlobal
