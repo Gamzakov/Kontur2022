@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace AutoComplete
@@ -16,11 +17,13 @@ namespace AutoComplete
         public void AddToSearch(List<FullName> fullNames)
         {
             //Добавьте новый элемент чтобы он начал участвовать в поиске по фио
+            throw new NotImplementedException();
         }
 
         public List<string> Search(string prefix)
         {
             //Реализуйте алгоритм поиска по префиксу фио, как составить фио смотри условия задачи.
+            throw new NotImplementedException();
         }
     }
 }
