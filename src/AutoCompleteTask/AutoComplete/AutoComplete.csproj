@@ -4,7 +4,7 @@
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-        <OutputType>Exe</OutputType>
+        <OutputType>Library</OutputType>
     </PropertyGroup>
 
 </Project>
