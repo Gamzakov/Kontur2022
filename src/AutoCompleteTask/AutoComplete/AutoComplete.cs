@@ -3,14 +3,6 @@ using System.Collections.Generic;
 
 namespace AutoComplete
 {
-
-    public struct FullName
-    {
-        public string Name;
-        public string Surname;
-        public string Patronymic;
-    }
-
     public class AutoCompleter
     {
 
@@ -25,5 +17,12 @@ namespace AutoComplete
             //Реализуйте алгоритм поиска по префиксу фио, как составить фио смотри условия задачи.
             throw new NotImplementedException();
         }
+    }
+
+    public struct FullName
+    {
+        public string Name;
+        public string Surname;
+        public string Patronymic;
     }
 }
