@@ -1,5 +1,6 @@
 # Kontur2022 #
 ![main workflow](https://github.com/Gamzakov/Kontur2022/actions/workflows/tests.yml/badge.svg)
+
 Решение тестового задания на летнюю стажировку 2022 в СКБ-Контур.
 
 ## Задачи ##
