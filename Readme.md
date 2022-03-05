@@ -1,5 +1,7 @@
 # Kontur2022 #
-![main workflow](https://github.com/Gamzakov/Kontur2022/actions/workflows/main.yml/badge.svg)
+![AutoComplete Build & Test workflow](https://github.com/Gamzakov/Kontur2022/actions/workflows/AutoComplete.yml/badge.svg)
+![Morphology Build & Test workflow](https://github.com/Gamzakov/Kontur2022/actions/workflows/Morphology.yml/badge.svg)
+![Microservices Build & Test workflow](https://github.com/Gamzakov/Kontur2022/actions/workflows/Microservices.yml/badge.svg)
 
 Решение тестового задания на летнюю стажировку 2022 в СКБ-Контур.
 

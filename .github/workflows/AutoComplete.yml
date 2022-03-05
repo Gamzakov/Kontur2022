@@ -1,0 +1,29 @@
+---
+name: AutoComplete Build
+
+on:
+  pull_request:
+    paths-ignore:
+      - '**.md'
+
+  push:
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  build:
+    name: Build
+    runs-on: windows-latest
+    env:
+      DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+      DOTNET_NOLOGO: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build AutoComplete
+        run: dotnet build ${{ github.workspace }}/src/AutoCompleteTask/AutoComplete/AutoComplete.csproj --no-restore
+      - name: Test AutoComplete
+        run: dotnet test ${{ github.workspace }}/src/AutoCompleteTask/AutoComplete.Tests/AutoComplete.Tests.csproj --no-restore --verbosity normal

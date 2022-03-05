@@ -1,0 +1,29 @@
+---
+name: Microservices
+
+on:
+  pull_request:
+    paths-ignore:
+      - '**.md'
+
+  push:
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  build:
+    name: Build
+    runs-on: windows-latest
+    env:
+      DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+      DOTNET_NOLOGO: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Build Microservices
+        run: dotnet build ${{ github.workspace }}/src/MicroservicesTask/Microservices/Microservices.csproj --no-restore
+      - name: Test Microservices
+        run: dotnet test ${{ github.workspace }}/src/MicroservicesTask/Microservices.Tests/Microservices.Tests.csproj --no-restore --verbosity normal

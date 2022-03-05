@@ -1,5 +1,5 @@
 ---
-name: Main
+name: Morphology
 
 on:
   pull_request:
@@ -23,7 +23,7 @@ jobs:
         uses: actions/checkout@main
       - name: Restore dependencies
         run: dotnet restore
-      - name: Build
-        run: dotnet build --no-restore
-      - name: Test
-        run: dotnet test --no-build --verbosity normal
+      - name: Build Morphology
+        run: dotnet build ${{ github.workspace }}/src/MorphologyTask/Morphology/Morphology.csproj --no-restore
+      - name: Test Morphology
+        run: dotnet test ${{ github.workspace }}/src/MorphologyTask/Morphology.Tests/Morphology.Tests.csproj --no-restore --verbosity normal
