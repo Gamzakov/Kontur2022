@@ -1,5 +1,5 @@
 ---
-name: AutoComplete Build
+name: AutoComplete
 
 on:
   pull_request:
