@@ -9,7 +9,8 @@ namespace Morphology
         private readonly Dictionary<string, Dictionary<int, string>> _morphTable;
         private readonly Dictionary<string, int> _tagTable;
 
-        private SentenceMorpher(Dictionary<string, Dictionary<int, string>> morphTable, Dictionary<string, int> tagTable)
+        private SentenceMorpher(Dictionary<string, Dictionary<int, string>> morphTable,
+            Dictionary<string, int> tagTable)
         {
             _morphTable = morphTable;
             _tagTable = tagTable;
@@ -43,7 +44,7 @@ namespace Morphology
                     continue;
                 }
 
-                var splittedLine = line.Split(' ', ',', '\t');
+                var splittedLine = line.Split(new[] {' ', ',', '\t'}, StringSplitOptions.RemoveEmptyEntries);
 
                 var word = splittedLine[0];
                 var tags = splittedLine[1..];
@@ -112,11 +113,11 @@ namespace Morphology
         public virtual string Morph(string sentence)
         {
             var morphedWords = new List<string>();
-            var lines = sentence.Split(new[] { ' ', '\r', '\n', '\t' }, StringSplitOptions.RemoveEmptyEntries);
+            var lines = sentence.Split(new[] {' ', '\r', '\n', '\t'}, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var line in lines)
             {
-                var splittedLine = line.Split(new[] { '{', ',', '}' }, StringSplitOptions.RemoveEmptyEntries);
+                var splittedLine = line.Split(new[] {'{', ',', '}'}, StringSplitOptions.RemoveEmptyEntries);
                 var word = splittedLine[0];
                 var tags = splittedLine[1..];
 
