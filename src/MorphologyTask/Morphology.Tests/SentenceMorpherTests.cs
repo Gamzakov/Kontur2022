@@ -1,11 +1,7 @@
-﻿using Morphology;
+﻿using NUnit.Framework;
 
-using NUnit.Framework;
-
-using System;
 using System.Collections.Generic;
 
-// ReSharper disable JoinDeclarationAndInitializer
 
 namespace Morphology.Tests
 {
@@ -150,7 +146,7 @@ namespace Morphology.Tests
             };
             var secondMorpher = SentenceMorpher.Create(secondDefaultDictionary);
             string actualResultOfFirstMorpher;
-            string actualResultOfSecondMorpher;;
+            string actualResultOfSecondMorpher;
 
             // Act
             actualResultOfFirstMorpher = _morpher.Morph(input);
